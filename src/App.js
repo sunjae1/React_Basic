@@ -77,10 +77,34 @@ function App() {
       <hr></hr>
     </div>
 
+{/* Modal UI 디자인하기 */}
+{/* HTML 을 한단어로 줄여서 쓸 수 있는 방법 : Component 문법 */}
+    {/* Component 유의사항.
+        1. 이름은 대문자로 시작해야함. */}
+
+    <Modal />
 
     </div>
     
   );
+
+
+  return ( //하나의 html 태그만 가능 div 여러개 불가, 중첩은 가능.
+  <div></div>
+
+
+  )
+}
+
+//원하는 HTML 담고 이름짓기
+function Modal() {
+  return (
+    <div className="modal">
+      <h2>  제목 </h2>
+      <p>날짜 </p>
+      <p>상세내용</p>
+    </div>
+  )
 }
 
 export default App;
